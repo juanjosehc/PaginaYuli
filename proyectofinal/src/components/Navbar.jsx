@@ -15,17 +15,6 @@ const Navbar = () => {
 
   const suggestionsRef = useRef()
 
-  const productNames = [
-    "Balón Nike",
-    "Balón Adidas",
-    "Balón Puma",
-    "Balón Mundial 2022",
-    "Balón Futsal",
-    "Balón Retro",
-    "Balón Profesional",
-    "Balón Infantil"
-  ]
-
   const handleSearchChange = (e) => {
     const value = e.target.value
     setSearch(value)
