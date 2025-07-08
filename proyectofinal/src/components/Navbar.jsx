@@ -88,9 +88,20 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-blue-600 text-white px-4 py-3 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-        <Link to="/" className="text-xl font-bold hover:underline">
-          Tienda De Panes
-        </Link>
+      <div className="flex items-center gap-x-6 gap-y-2 flex-wrap">
+          <Link to="/" className="text-xl font-bold hover:text-blue-200 transition-colors">
+            Tienda De Panes
+          </Link>
+          {/* --- NUEVOS ENLACES --- */}
+          <div className="flex items-center gap-4">
+              <Link to="/about" className="hover:text-blue-200 transition-colors whitespace-nowrap">
+                Acerca de nosotros
+              </Link>
+              <Link to="/contact" className="hover:text-blue-200 transition-colors">
+                Contáctanos
+              </Link>
+          </div>
+      </div>
 
         <form
           onSubmit={handleSearchSubmit}

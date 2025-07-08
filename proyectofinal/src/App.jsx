@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import CartSidebar from './components/CartSidebar'
 import { useCart } from './context/CartContext'
+import AboutPage from './components/AboutUs'
+import ContactPage from './components/Contact'
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -20,6 +22,8 @@ function App() {
       <div className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </div>
